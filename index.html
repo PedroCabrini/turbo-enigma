@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Personagem</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/estilo.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="icon" href="./src/imagens/d20.png">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1>Escolha sua classe!</h1>
+    </header>
+    <main class="classe-slider">
+
+        <button class="btn-seta btn-voltar" id="btn-voltar">
+            <img src="./src/imagens/seta.png" alt="Voltar classe">
+        </button>
+
+        <ul class="lista-classes">
+
+            <li class="cartao selecionado fundo-cav">
+                <h2 class="classe">Cavaleiro</h2>
+                
+                <img class="imagem-personagem" src="./src/imagens/cavaleiro.png" alt="Cavaleiro">
+    
+                    <div class="atributos">
+                        <h3 class="descricao">Atributos</h3>
+                        <p class="texto"> Pontos de Vida: um cavaleiro começa com 20 pontos de vida e ganha 5 PV por nível.
+                            <br> <br>
+    
+                            Perícias Treinadas: 2 + modificador de Inteligência. <br> <br>
+    
+                            Perícias de Classe: Adestrar Animais, Atletismo, Cavalgar, Conhecimento, Diplomacia, Iniciativa,
+                            Intimidação, Percepção.<br> <br>
+    
+                            Talentos Adicionais: Usar Armaduras (leves, médias e pesadas), Usar Armas (simples e marciais),
+                            Usar Escudos, Fortitude Maior.
+                    </div>
+                </li> 
+
+                <li class="cartao fundo-wiz">
+
+                    <h2 class="classe">Mago</h2>
+                    <img class="imagem-personagem" src="./src/imagens/mago.png" alt="Mago">
+    
+    
+                    <div class="atributos">
+                        <h3 class="descricao">Atributos</h3>
+                        <p class="texto">Pontos de Vida: um mago começa com 8 pontos de vida e ganha 2 PV por nível
+                            seguinte.<br> <br>
+    
+                            Perícias Treinadas: 2 + modificador de Inteligência.<br> <br>
+    
+                            Perícias de Classe: Conhecimento, Identificar Magia, Ofício, Percepção.<br> <br>
+    
+                            Talentos Adicionais: Usar Armas Simples, Vontade de Ferro.
+                    </div>
+                </li>
+
+                <li class="cartao fundo-bar">
+                    <h2 class="classe">Bardo</h2>
+    
+                    <img class="imagem-personagem" src="./src/imagens/bardo.png" alt="Bardo">
+    
+                    <div class="atributos">
+                        <h3 class="descricao">Atributos</h3>
+                        <p class="texto">Pontos de Vida: um bardo começa com 12 pontos de vida e ganha 3 PV por nível
+                            seguinte.<br> <br>
+    
+                            Perícias Treinadas: 6 + modificador de Inteligência.<br> <br>
+    
+                            Perícias de Classe: Acrobacia, Atletismo, Atuação, Cavalgar, Conhecimento, Diplomacia,
+                            Enganação, Furtividade, Identificar Magia, Iniciativa, Intuição, Jogatina, Obter Informação,
+                            Percepção.<br> <br>
+    
+                            Talentos Adicionais: Usar Armaduras Leves, Usar Armas (simples e marciais), Usar Escudos,
+                            Reflexos Rápidos, Vontade de Ferro.
+                    </div>
+                </li>
+
+
+                <li class="cartao fundo-caç">
+                    <h2 class="classe">Caçador</h2>
+                    <img class="imagem-personagem" src="./src/imagens/cacador.png" alt="Caçador">
+    
+                    <div class="atributos">
+                        <h3 class="descricao">Atributos</h3>
+                        <p class="texto">Pontos de Vida: um caçador começa com 16 pontos de vida e ganha 4 PVs por nível
+                            seguinte.<br> <br>
+    
+                            Perícias Treinadas: 5+ modificador de Inteligência. (D20: Luta ou Pontaria, Furtividade e mais 6
+                            perícias).<br> <br>
+    
+                            Perícias de Classe: Acrobacia, Atletismo, Atuação, Cavalgar, Conhecimento, Cura, Diplomacia,
+                            Enganação, Furtividade, Iniciativa, Intimidação, Intuição, Jogatina, Ladinagem, Obter
+                            Informações, Ofício, Percepção.<br> <br>
+    
+                            Talentos Adicionais: Usar Armaduras (Leves e Médias), Usar Armas Simples e Marciais, Reflexos
+                            Rápidos, Fortitude Maior e Vontade de Ferro.
+                    </div>
+                </li>
+    
+
+                <li class="cartao fundo-cle">
+                    <h2 class="classe">Clérigo</h2>
+    
+                    <img class="imagem-personagem" src="./src/imagens/clerigo.png" alt="Clérigo">
+    
+                    <div class="atributos">
+                        <h3 class="descricao">Atributos</h3>
+                        <p class="texto">Pontos de Vida: um clérigo começa com 16 pontos de vida e ganha 4 PVs por nível
+                            seguinte.<br> <br>
+    
+                            Perícias Treinadas: 2 + modificador de Inteligência.<br> <br>
+    
+                            Perícias de Classe: Conhecimento, Cura, Diplomacia, Identificar Magia, Intuição, Meditação,
+                            Ofício.<br> <br>
+    
+                            Talentos Adicionais: Usar Armaduras (leves, médias e pesadas),Usar Armas Simples, Usar Escudos,
+                            Fortitude Maior, Vontade de Ferro.
+    
+                    </div>
+                </li>
+
+                <li class="cartao fundo-dru">
+                    <h2 class="classe">Druída</h2>
+    
+                    <img class="imagem-personagem" src="./src/imagens/druida.png" alt="Druída">
+    
+                    <div class="atributos">
+                        <h3 class="descricao">Atributos</h3>
+                        <p class="texto">Pontos de Vida: um druida começa com 16 pontos de vida e ganha 4 PV por nível
+                            seguinte.<br> <br>
+    
+                            Perícias Treinadas: 4 + modificador de Inteligência.<br> <br>
+    
+                            Perícias de Classe: Adestrar Animais, Atletismo, Cavalgar, Cura, Conhecimento, Diplomacia,
+                            Identificar Magia, Ofício, Percepção Sobrevivência.<br> <br>
+    
+                            Talentos Adicionais: Usar Armaduras (leves e médias), Usar Armas Simples, Usar Escudos,
+                            Fortitude Maior, Vontade de Ferro, Senso da Natureza.
+    
+                    </div>
+                </li>
+
+                <li class="cartao fundo-lad">
+                    <h2 class="classe">Ladino</h2>
+                    <img class="imagem-personagem" src="./src/imagens/ladino.png" alt="Ladino">
+    
+                    <div class="atributos">
+                        <h3 class="descricao">Atributos</h3>
+                        <p class="texto">Pontos de Vida: um ladino começa com 12 pontos de vida e ganha 3 PV por nível
+                            seguinte.<br> <br>
+    
+                            Perícias Treinadas: 8 + modificador de Inteligência.<br> <br>
+    
+                            Perícias de Classe: Acrobacia, Atletismo, Atuação, Cavalgar, Conhecimento, Diplomacia,
+                            Enganação, Furtividade, Iniciativa, Intimidação, Intuição, Jogatina, Ladinagem, Obter
+                            Informações, Ofício, Percepção.<br> <br>
+    
+                            Talentos Adicionais: Usar Armaduras Leves, Usar Armas (simples e marciais), Usar Escudos,
+                            Reflexos Rápidos.
+                    </div>
+                </li>
+
+                <li class="cartao fundo-mon">
+                    <h2 class="classe">Monge</h2>
+    
+                    <img class="imagem-personagem" src="./src/imagens/monge.png" alt="Monge">
+                    <div class="atributos">
+                        <h3 class="descricao">Atributos</h3>
+                        <p class="texto">Pontos de Vida: um monge começa com 16 pontos de vida e ganha 4 PVs por nível
+                            seguinte.<br> <br>
+    
+                            Perícias Treinadas: 4 + modificador de Inteligência.<br> <br>
+    
+                            Perícias de Classe: Acrobacia, Atletismo, Conhecimento, Cura, Diplomacia, Furtividade,
+                            Iniciativa, Intuição, Meditação, Ofício, Percepção.<br> <br>
+    
+                            Talentos Adicionais: Ataque Desarmado Aprimorado, Fortitude Maior, Reflexos Rápidos, Usar Arma
+                            Exótica (nunchaku, sai, shuriken), Usar Armas Simples e Vontade de Ferro.
+    
+                    </div>
+                </li>
+
+                <li class="cartao fundo-nec">
+                    <h2 class="classe">Necromancer</h2>
+    
+                    <img class="imagem-personagem" src="./src/imagens/necromancer.png" alt="Necromancer">
+    
+                    <div class="atributos">
+                        <h3 class="descricao">Atributos</h3>
+                        <p class="texto">Pontos de Vida: um necromante começa com 8 pontos de vida e ganha 2 PVs por nível
+                            seguinte.<br> <br>
+    
+                            Perícias Treinadas: 2 + modificador de Inteligência<br> <br>
+    
+                            Perícias de Classe: Conhecimento, Identificar Magia, Ofício e Percepção.<br> <br>
+    
+                            Talentos Adicionais: Usar Armas (simples), Vontade de Ferro.<br> <br>
+    
+                            Pontos de Magia: um necromante tem um número de pontos de magia (PM) igual a 1 + modificador de
+                            Inteligência. Cada vez que avança de nível, recebe 3 PM.<br> <br>
+    
+    
+                            Magias por Nível: 1 de necromancia + 1 de qualquer escola, exceto encantamento.<br> <br>
+    
+                            Item de Poder: Lamparina negra. O necromante pode possuir um item de poder normal, mas também
+                            tem a opção de substitui-lo por uma lamparina negra.<br> <br>
+    
+                            Familiar: Um necromante pode escolher um familiar da lista normal do Mago. Contudo, caso use um
+                            de seus Mistérios Arcanos, pode ter um lacaio funesto ou montaria esquelética no lugar de um
+                            familiar comum.
+    
+                    </div>
+                </li>
+
+            <li class="cartao fundo-pal">
+                <h2 class="classe">Paladino</h2>
+
+                <img class="imagem-personagem" src="./src/imagens/paladino.png" alt="Paladino">
+
+                <div class="atributos">
+                    <h3 class="descricao">Atributos</h3>
+                    <p class="texto">Pontos de Vida: um paladino começa com 20 pontos de vida e ganha 5 PV por nível
+                        seguinte.<br> <br>
+                        Perícias Treinadas: 2 + modificador de Inteligência.<br> <br>
+
+                        Perícias de Classe: Adestrar Animais, Atletismo, Cavalgar, Conhecimento, Cura, Diplomacia,
+                        Iniciativa, Intuição, Ofício.<br> <br>
+
+                        Talentos Adicionais: Usar Armaduras (leves, médias e pesadas), Usar Armas (simples e marciais),
+                        Usar Escudos, Fortitude Maior.
+                </div>
+            </li>
+     </ul>
+
+        <button class="btn-seta" id="btn-avancar">
+            <img src="./src/imagens/seta.png" alt="Avançar classe">
+        </button>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>

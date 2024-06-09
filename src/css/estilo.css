@@ -1,0 +1,156 @@
+body{
+    font-family: 'Cormoramt Infant', sans-serif;
+    background-image: url('../imagens/fundo-menu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.cabecalho{
+    text-align: center;
+    padding: 60px 0;
+}
+
+.cabecalho h1{
+    color: #f1ecff;
+    font-size: 45px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.classe-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.lista-classes{
+    width: 330px;
+    height: 520px;
+    position: relative;
+}
+
+.btn-seta{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 0px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.btn-seta.btn-voltar {
+    transform: rotateY(180deg);
+}
+
+.btn-seta:hover{
+    background-color: rgb(26, 118, 199);
+}
+
+.cartao{
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    padding: 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cartao.selecionado{
+    opacity: 1;
+    z-index: 1;
+}
+
+.cartao .imagem-personagem{
+    width: 100%;
+    max-height: 280px;
+    border-top-left-radius: 10px;
+}
+
+.cartao .classe{
+    text-transform: uppercase;
+    background-color: rgba(179, 177, 185, 0.7);
+    padding: 8px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.cartao .atributos{
+    background-color:rgb(181, 181, 181, 0.8);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.cartao .atributos .descricao{
+  background-color: #333333;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 12px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cartao .atributos .texto{
+    padding: 12px;
+    font-size: 16px;
+    text-align: center;
+    max-height: 110px;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.cartao.fundo-cav{
+    background: url(../imagens/fundo-cav.png) no-repeat;
+}
+
+.cartao.fundo-wiz{
+    background: url(../imagens/fundo-wiz.png) no-repeat;
+}
+
+.cartao.fundo-bar{
+    background: url(../imagens/fundo-bar.png) no-repeat;
+}
+
+.cartao.fundo-caç{
+    background: url(../imagens/fundo-caç.png) no-repeat;
+}
+
+.cartao.fundo-cle{
+    background: url(../imagens/fundo-cle.png) no-repeat;
+}
+
+.cartao.fundo-dru{
+    background: url(../imagens/fundo-dru.png) no-repeat;
+}
+
+.cartao.fundo-lad{
+    background: url(../imagens/fundo-lad.png) no-repeat;
+}
+
+.cartao.fundo-mon{
+    background: url(../imagens/fundo-mon.png) no-repeat;
+}
+
+.cartao.fundo-nec{
+    background: url(../imagens/fundo-nec.png) no-repeat;
+}
+
+.cartao.fundo-pal{
+    background: url(../imagens/fundo-pal.png) no-repeat;
+}
